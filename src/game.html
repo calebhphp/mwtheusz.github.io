@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Madurado Developers</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/jogo.css">
+  <link rel="icon" href="data:,">
+  <script src="js/scripts.js" defer></script>
+</head>
+<body>
+<section class="flex">
+  <section class="mt-20 mx-auto w-auto justify-center">
+    <div class="flex justify-center ">
+      <svg  class="color-purple-700" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 12l-.688-4h-.609l-.703 4c-.596.347-1 .984-1 1.723 0 1.104.896 2 2 2s2-.896 2-2c0-.739-.404-1.376-1-1.723zm-1-8c-5.522 0-10 4.477-10 10s4.478 10 10 10 10-4.477 10-10-4.478-10-10-10zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm-2-19.819v-2.181h4v2.181c-1.438-.243-2.592-.238-4 0zm9.179 2.226l1.407-1.407 1.414 1.414-1.321 1.321c-.462-.484-.964-.926-1.5-1.328zm-12.679 9.593c0 .276-.224.5-.5.5s-.5-.224-.5-.5.224-.5.5-.5.5.224.5.5zm12 0c0 .276-.224.5-.5.5s-.5-.224-.5-.5.224-.5.5-.5.5.224.5.5zm-6 6c0 .276-.224.5-.5.5s-.5-.224-.5-.5.224-.5.5-.5.5.224.5.5zm-4-2c0 .276-.224.5-.5.5s-.5-.224-.5-.5.224-.5.5-.5.5.224.5.5zm8 0c0 .276-.224.5-.5.5s-.5-.224-.5-.5.224-.5.5-.5.5.224.5.5zm-8-9c0 .276-.224.5-.5.5s-.5-.224-.5-.5.224-.5.5-.5.5.224.5.5zm8 0c0 .276-.224.5-.5.5s-.5-.224-.5-.5.224-.5.5-.5.5.224.5.5z"/></svg>
+      <p class="text-indigo-700 font-bold text-lg">00: <span id="countdowntimer">50</span></p>
+    </div>
+      <main>
+        <!-- QUIZZ CONTAINER -->
+        <div id="quizz-container">
+          <p id="question">
+            <span id="question-number">1</span> &#8212;
+            <span id="question-text">Qual é a unidade de medida para metros?</span>
+          </p>
+          <div id="answers-box">
+            <button> <span class="question-answer"></span></button>
+            <button> <span class="question-answer"></span></button>
+            <button> <span class="question-answer"></span></button>
+            <button> <span class="question-answer"></span></button>
+          </div>
+        </div>
+        <!-- SCORE BOARD -->
+        <div id="score-container" class="hide">
+          <h2>Parabéns</h2>
+          <p id="display-score"><span>90</span>%</p>
+          <p>
+            Você acertou <span id="correct-answers">0</span> de
+            <span id="questions-qty">10</span> perguntas
+          </p>
+          <button id="restart">Voltar</button>
+        </div>
+        <!-- TEMPLATE RESPOSTA -->
+        <button class="answer-template hide bg-indigo-700 text-white text-bold py-5 px-5 rounded-xl text-center">
+           <span class="question-answer"></span>
+        </button>
+      </main>
+  </section>
+  <div class="mr-20 mt-5">
+    <img src="./img/logo.png" class="w-32 mt-5"></img>
+    <h1 class="mt-5 text-xl text-indigo-700 font-bold">Quiz Symbicort</h1>
+  </div>
+</section>
+  
+</body>
+</html>

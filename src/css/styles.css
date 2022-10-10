@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* sora-regular - latin */
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/sora-v10-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/sora-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/sora-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/sora-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/sora-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/sora-v10-latin-regular.svg#Sora') format('svg'); /* Legacy iOS */
+}
+/* sora-500 - latin */
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/sora-v10-latin-500.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/sora-v10-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/sora-v10-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/sora-v10-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/sora-v10-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/sora-v10-latin-500.svg#Sora') format('svg'); /* Legacy iOS */
+}
+/* sora-600 - latin */
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/sora-v10-latin-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/sora-v10-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/sora-v10-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/sora-v10-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/sora-v10-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/sora-v10-latin-600.svg#Sora') format('svg'); /* Legacy iOS */
+}
+/* sora-700 - latin */
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/sora-v10-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/sora-v10-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/sora-v10-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/sora-v10-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/sora-v10-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/sora-v10-latin-700.svg#Sora') format('svg'); /* Legacy iOS */
+}
+/* sora-800 - latin */
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/sora-v10-latin-800.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/sora-v10-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/sora-v10-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/sora-v10-latin-800.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/sora-v10-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/sora-v10-latin-800.svg#Sora') format('svg'); /* Legacy iOS */
+}
+  .video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  html {
+  font-family: "Sora", sans-serif;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background-image: url("../img/bg.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  overflow: hidden;
+  }
+  .radial-orange {
+    background: radial-gradient(68.44% 49.38% at 50.22% 50.62%, #5f00b8 0%, #8401ff 81.25%);
+  }
+  .radial-blue {
+    background: radial-gradient(50% 50% at 50% 50%, #005F81 8.33%, #00AEEB 100%);
+  }
+  .bordertext-1 {
+    -webkit-text-stroke: 1rem black
+  }
+  .bordertext-2 {
+    -webkit-text-stroke: 2rem black
+  }
+  body {
+    animation: fadeInAnimation ease 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .leader:nth-child(odd) {
+    background-color: #6091FA;
+    box-shadow: 0px 0px 5px 1px #0ff;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+}
